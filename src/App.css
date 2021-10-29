@@ -1,6 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap');
 *
 {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family:'Amaranth',sans-serif;
+}
+
+#navhead
+{
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+#cat
+{
+  color: rgb(255, 115, 0);
+}
+.main
+{
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(163, 163, 163);
 }
