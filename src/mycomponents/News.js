@@ -3,6 +3,7 @@ import NewsItem from './NewsItem';
 import Spinner from './Spinner';
 import PropTypes from 'prop-types';
 
+
 let mystyle = {
    fontSize:'39px',
    fontWeight:'Bold'
@@ -52,7 +53,7 @@ export class News extends Component {
          console.log("previous");
 
          let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=d4cd009f09ab49eeb7af0264dc5d6523&page=${this.state.page - 1}&pageSize=${this.props.pageSize}`;
-         {this.setState({loading:true})}
+         {this.setState({loading:true})};
          let data = await fetch(url);
          let parsedata =await data.json();
          console.log( parsedata);
@@ -71,7 +72,7 @@ export class News extends Component {
         if(!(this.state.page + 1 > Math.ceil(this.state.totalResults/this.props.pageSize)))
         {
           let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=d4cd009f09ab49eeb7af0264dc5d6523&page=${this.state.page + 1}&pageSize=${this.props.pageSize}`;
-          {this.setState({loading:true})}
+          {this.setState({loading:true})};
           let data = await fetch(url);
           let parsedata =await data.json();
           console.log( parsedata);
@@ -98,7 +99,7 @@ export class News extends Component {
             </div>
             { this.state.loading && <Spinner/>}
             <div className="row">
-                {!this.state.loading && this.state.articles.map((element)=>{
+                { !this.state.loading && this.state.articles.map((element)=>{
 
                     return (<div className="col-md-4" key={element.url} >
                     <NewsItem title={element.title?element.title.slice(0,90):""} description={element.description?element.description.slice(0,120):"read full article below"} imageUrl={element.urlToImage?element.urlToImage:"https://raw.githubusercontent.com/Shubham56-droid/Turbo-News-React-App/main/default/default_img.jpg"}
