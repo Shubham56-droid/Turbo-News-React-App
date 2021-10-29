@@ -15,8 +15,10 @@ Then after downloading of this file pls do following procedure:
 5. Now for developemnt use command npm run start.
 
 ## Images Of App
-<img src="./images/" />
-<img src="./images/" />
+<img src="./images/Screenshot (64).png" />
+<img src="./images/Screenshot (65).png" />
+<img src="./images/Screenshot (66).png" />
+<img src="./images/Screenshot (67).png" />
+<img src="./images/Screenshot (68).png" />
+<img src="./images/Screenshot (69).png" />
 
-## Link to the Website
-pls <a href="">visit</a> here 
